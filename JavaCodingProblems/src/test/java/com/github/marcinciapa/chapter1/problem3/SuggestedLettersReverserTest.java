@@ -10,7 +10,7 @@ class SuggestedLettersReverserTest {
     private final SuggestedLettersReverser lettersReverser = new SuggestedLettersReverser();
 
     @ParameterizedTest
-    @MethodSource("com.github.marcinciapa._3.TestInputProvider#testInputLettersInverter")
+    @MethodSource("com.github.marcinciapa.chapter1.problem3.TestInputProvider#testInputLettersInverter")
     void shouldInvertLettersInWords(String inputString, String expectedResult) {
         assertEquals(expectedResult, lettersReverser.reverseLettersInWords(inputString));
     }

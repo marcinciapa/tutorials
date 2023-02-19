@@ -19,7 +19,7 @@ class SuggestedCharactersCounterTest {
     }
 
     @ParameterizedTest
-    @MethodSource("com.github.marcinciapa._6.TestInput#inputData")
+    @MethodSource("com.github.marcinciapa.chapter1.problem6.TestInput#inputData")
     void shouldCountCharacter(String inputString, char countedChar, int expectedCount) {
         assertEquals(expectedCount, counter.countOccurrencesOf(countedChar, inputString));
     }

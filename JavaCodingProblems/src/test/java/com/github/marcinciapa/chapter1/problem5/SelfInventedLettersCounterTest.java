@@ -10,13 +10,13 @@ class SelfInventedLettersCounterTest {
     private final SelfInventedLettersCounter lettersCounter = new SelfInventedLettersCounter();
 
     @ParameterizedTest
-    @MethodSource("com.github.marcinciapa._5.TestInput#vowelsCountInput")
+    @MethodSource("com.github.marcinciapa.chapter1.problem5.TestInput#vowelsCountInput")
     void shouldCountVowels(String inputString, int expectedCount) {
         assertEquals(expectedCount, lettersCounter.countVowels(inputString));
     }
 
     @ParameterizedTest
-    @MethodSource("com.github.marcinciapa._5.TestInput#consonantsCountInput")
+    @MethodSource("com.github.marcinciapa.chapter1.problem5.TestInput#consonantsCountInput")
     void shouldCountConsonants(String inputString, int expectedCount) {
         assertEquals(expectedCount, lettersCounter.countConsonants(inputString));
     }

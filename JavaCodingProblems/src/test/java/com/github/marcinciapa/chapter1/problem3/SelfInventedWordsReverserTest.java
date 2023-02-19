@@ -10,7 +10,7 @@ class SelfInventedWordsReverserTest {
     private final SelfInventedWordsReverser wordsReverser = new SelfInventedWordsReverser();
 
     @ParameterizedTest
-    @MethodSource("com.github.marcinciapa._3.TestInputProvider#testInputWordsInverter")
+    @MethodSource("com.github.marcinciapa.chapter1.problem3.TestInputProvider#testInputWordsInverter")
     void shouldInvertWordsInString(String inputString, String expectedResult) {
         assertEquals(expectedResult, wordsReverser.reverseWordsInString(inputString));
     }

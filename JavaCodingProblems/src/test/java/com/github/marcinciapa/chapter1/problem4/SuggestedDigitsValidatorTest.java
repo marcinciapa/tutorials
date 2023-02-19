@@ -10,7 +10,7 @@ class SuggestedDigitsValidatorTest {
     private final SuggestedDigitsValidator validator = new SuggestedDigitsValidator();
 
     @ParameterizedTest
-    @MethodSource("com.github.marcinciapa._4.DigitsValidatorTestDataProvider#testInput")
+    @MethodSource("com.github.marcinciapa.chapter1.problem4.DigitsValidatorTestDataProvider#testInput")
     void shouldReturnExpectedValue(String inputString, boolean expectedResult) {
         assertEquals(expectedResult, validator.containsDigitsOnly(inputString));
     }
