@@ -1,4 +1,4 @@
-package com.github.marcinciapa.chapter2.problem49;
+package com.github.marcinciapa.chapter2.problem50;
 
 import java.util.List;
 
