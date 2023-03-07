@@ -12,7 +12,7 @@ class SelfValidatedImmutableClass implements ValidatedImmutableClass {
         return new ValidatedImmutableClassBuilder<>() {
             @Override
             SelfValidatedImmutableClass build() {
-                if(super.value == null) {
+                if (super.value == null || super.value < 0) {
                     throw new IllegalStateException();
                 }
                 return new SelfValidatedImmutableClass(super.value);

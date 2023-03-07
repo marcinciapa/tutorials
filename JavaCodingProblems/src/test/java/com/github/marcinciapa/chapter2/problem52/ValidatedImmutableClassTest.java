@@ -10,9 +10,21 @@ abstract class ValidatedImmutableClassTest<T extends ValidatedImmutableClass> {
     abstract ValidatedImmutableClassBuilder<T> builder();
 
     @Test
-    void shouldApplyNonNullValue() {
+    void shouldAllowPositiveValue() {
+        ValidatedImmutableClass immutableObject = builder().withValue(1).build();
+        assertEquals(1, immutableObject.value());
+    }
+
+    @Test
+    void shouldAllowZeroValue() {
         ValidatedImmutableClass immutableObject = builder().withValue(0).build();
         assertEquals(0, immutableObject.value());
+    }
+
+    @Test
+    void shouldThrowWhenNegativeValueSet() {
+        ValidatedImmutableClassBuilder<T> builder = builder().withValue(-1);
+        assertThrows(IllegalStateException.class, builder::build);
     }
 
     @Test

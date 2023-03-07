@@ -1,7 +1,12 @@
 package com.github.marcinciapa.chapter2.problem52;
 
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
+
 abstract class ValidatedImmutableClassBuilder<T extends ValidatedImmutableClass> {
 
+    @NotNull
+    @Min(0)
     protected Integer value;
 
     protected ValidatedImmutableClassBuilder() {
@@ -12,5 +17,5 @@ abstract class ValidatedImmutableClassBuilder<T extends ValidatedImmutableClass>
         return this;
     }
 
-    abstract SelfValidatedImmutableClass build();
+    abstract T build();
 }
