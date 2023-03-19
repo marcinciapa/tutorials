@@ -1,5 +1,6 @@
-package com.github.marcinciapa.chapter2.problem53;
+package com.github.marcinciapa.chapter2.problem53.c;
 
+import com.github.marcinciapa.chapter2.problem53.c.ConstructorShallowCopy;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

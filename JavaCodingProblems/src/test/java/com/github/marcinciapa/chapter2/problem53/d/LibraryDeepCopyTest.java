@@ -1,4 +1,4 @@
-package com.github.marcinciapa.chapter2.problem53;
+package com.github.marcinciapa.chapter2.problem53.d;
 
 import org.junit.jupiter.api.Test;
 
@@ -9,7 +9,7 @@ class LibraryDeepCopyTest {
     @Test
     void shouldMakeDeepCopy() {
         // given
-        LibraryDeepCopy original = new LibraryDeepCopy(0, 1, new LibraryDeepCopy.InsightObject(2));
+        LibraryDeepCopy original = new LibraryDeepCopy(0, 1, new InsideObject(2));
 
         // when
         LibraryDeepCopy copy = original.copy();

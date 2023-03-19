@@ -1,4 +1,4 @@
-package com.github.marcinciapa.chapter2.problem53;
+package com.github.marcinciapa.chapter2.problem53.d;
 
 import com.rits.cloning.Cloner;
 
@@ -6,9 +6,9 @@ class LibraryDeepCopy {
 
     private int x;
     private int y;
-    private InsightObject z;
+    private InsideObject z;
 
-    LibraryDeepCopy(int x, int y, InsightObject z) {
+    LibraryDeepCopy(int x, int y, InsideObject z) {
         this.x = x;
         this.y = y;
         this.z = z;
@@ -43,19 +43,4 @@ class LibraryDeepCopy {
         return cloner.deepClone(this);
     }
 
-    static class InsightObject {
-        private int z;
-
-        InsightObject(int z) {
-            this.z = z;
-        }
-
-        int getZ() {
-            return z;
-        }
-
-        void setZ(int z) {
-            this.z = z;
-        }
-    }
 }

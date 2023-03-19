@@ -1,4 +1,4 @@
-package com.github.marcinciapa.chapter2.problem53;
+package com.github.marcinciapa.chapter2.problem53.a;
 
 class ManualShallowCopy {
 
