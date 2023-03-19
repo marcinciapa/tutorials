@@ -2,7 +2,7 @@ package com.github.marcinciapa.chapter2.problem53;
 
 import java.io.Serializable;
 
-class CopyableNestedObject implements Serializable {
+class CopyableNestedObject {
 
     private int z;
 

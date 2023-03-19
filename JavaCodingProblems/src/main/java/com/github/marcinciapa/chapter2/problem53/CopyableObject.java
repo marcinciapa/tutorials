@@ -1,8 +1,6 @@
 package com.github.marcinciapa.chapter2.problem53;
 
-import java.io.Serializable;
-
-abstract class CopyableObject implements Serializable {
+abstract class CopyableObject {
 
     protected int x;
     protected int y;
@@ -13,6 +11,8 @@ abstract class CopyableObject implements Serializable {
         this.y = y;
         this.z = z;
     }
+
+    protected CopyableObject(){}
 
     int getX() {
         return x;

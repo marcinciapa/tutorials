@@ -2,7 +2,7 @@ package com.github.marcinciapa.chapter2.problem53;
 
 import java.io.*;
 
-class SerializationCopyableObject extends CopyableObject implements DeepCopyableObject, Serializable {
+class SerializationCopyableObject extends SerializableCopyableObject {
 
     SerializationCopyableObject(int x, int y, CopyableNestedObject z) {
         super(x, y, z);

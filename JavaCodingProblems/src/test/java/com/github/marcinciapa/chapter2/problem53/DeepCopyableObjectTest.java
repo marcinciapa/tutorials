@@ -11,17 +11,17 @@ abstract class DeepCopyableObjectTest<T extends CopyableObject & DeepCopyableObj
     @Test
     void shouldCreateDeepCopy() {
         // given
-        T original = createInstance(0, 1, 2);
+        T original = createInstance(1, 2, 3);
 
         // when
         CopyableObject copy = original.copy();
-        original.setX(3);
-        original.setY(4);
-        original.setZ(5);
+        original.setX(4);
+        original.setY(5);
+        original.setZ(6);
 
         // then
-        assertEquals(0, copy.getX());
-        assertEquals(1, copy.getY());
-        assertEquals(2, copy.getZ());
+        assertEquals(1, copy.getX());
+        assertEquals(2, copy.getY());
+        assertEquals(3, copy.getZ());
     }
 }
