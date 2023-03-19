@@ -1,6 +1,8 @@
 package com.github.marcinciapa.chapter2.problem53;
 
-class CopyableNestedObject {
+import java.io.Serializable;
+
+class CopyableNestedObject implements Serializable {
 
     private int z;
 

@@ -1,6 +1,8 @@
 package com.github.marcinciapa.chapter2.problem53;
 
-abstract class CopyableObject {
+import java.io.Serializable;
+
+abstract class CopyableObject implements Serializable {
 
     protected int x;
     protected int y;

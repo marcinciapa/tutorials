@@ -14,6 +14,7 @@ dependencies {
     implementation 'org.hibernate.validator:hibernate-validator:8.0.0.Final'
     runtimeOnly 'org.glassfish.expressly:expressly:5.0.0' // jakarta.el required by Hibernate Validator: https://github.com/jakartaee/expression-language
     implementation 'io.github.kostaskougios:cloning:1.10.3'
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
 }
 
 test {
