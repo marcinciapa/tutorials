@@ -1,9 +1,10 @@
-package com.github.marcinciapa.chapter2.problem53.d;
+package com.github.marcinciapa.chapter2.problem53;
 
-class InsideObject {
+class CopyableNestedObject {
+
     private int z;
 
-    InsideObject(int z) {
+    CopyableNestedObject(int z) {
         this.z = z;
     }
 
