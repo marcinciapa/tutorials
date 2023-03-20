@@ -15,6 +15,7 @@ dependencies {
     runtimeOnly 'org.glassfish.expressly:expressly:5.0.0' // jakarta.el required by Hibernate Validator: https://github.com/jakartaee/expression-language
     implementation 'io.github.kostaskougios:cloning:1.10.3'
     implementation 'org.apache.commons:commons-lang3:3.12.0'
+    implementation 'com.google.code.gson:gson:2.10.1'
 }
 
 test {
