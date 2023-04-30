@@ -1,6 +1,5 @@
 package com.github.marcinciapa.chapter3.problem73;
 
-import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Iterator;
@@ -8,22 +7,10 @@ import java.util.LinkedList;
 
 import static java.util.Calendar.*;
 
-class Java7DateRangeIterator implements DateRangeIterator {
-
-    private final DayOfYear rangeStart;
-    private final DayOfYear rangeEnd;
+class Java7DateRangeIterator extends AbstractDateRangeIterator implements DateRangeIterator {
 
     public Java7DateRangeIterator(DayOfYear rangeStart, DayOfYear rangeEnd) {
-        if (rangeStart == null || rangeEnd == null) {
-            throw new IllegalArgumentException();
-        }
-        LocalDate localRangeStart = LocalDate.of(rangeStart.year(), rangeStart.month(), rangeStart.day());
-        LocalDate localRangeEnd = LocalDate.of(rangeEnd.year(), rangeEnd.month(), rangeEnd.day());
-        if (localRangeEnd.isBefore(localRangeStart)) {
-            throw new IllegalArgumentException();
-        }
-        this.rangeStart = rangeStart;
-        this.rangeEnd = rangeEnd;
+        super(rangeStart, rangeEnd);
     }
 
     @Override
