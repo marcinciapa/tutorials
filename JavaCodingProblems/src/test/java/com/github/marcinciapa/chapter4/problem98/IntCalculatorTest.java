@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class AdderTest {
+class IntCalculatorTest {
 
     @Test
     void shouldAddNumbers() {
@@ -18,7 +18,7 @@ class AdderTest {
         values.add(8);
         values.add("2");
         var expectedResult = 17;
-        Calculator calculator = new Calculator(values);
+        IntCalculator calculator = new IntCalculator(values);
 
         // when
         int result = calculator.add();

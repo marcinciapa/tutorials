@@ -2,11 +2,11 @@ package com.github.marcinciapa.chapter4.problem98;
 
 import java.util.List;
 
-class Calculator {
+class IntCalculator {
 
     private final List<?> numbers;
 
-    Calculator(List<?> numbers) {
+    IntCalculator(List<?> numbers) {
         this.numbers = numbers;
     }
 
