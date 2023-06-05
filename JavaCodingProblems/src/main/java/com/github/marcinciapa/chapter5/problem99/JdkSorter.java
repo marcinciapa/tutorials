@@ -2,7 +2,7 @@ package com.github.marcinciapa.chapter5.problem99;
 
 import java.util.Arrays;
 
-class SelfInventedJdkSorter implements ArraySorter {
+class JdkSorter implements ArraySorter {
 
     @Override
     public Integer[] sort(Integer[] array) {

@@ -56,8 +56,8 @@ abstract class ArraySorterTest<T extends ArraySorter> {
     @Test
     void shouldSortUnsortedArray() {
         // given
-        var input = new Integer[]{4, 1, 3, 2};
-        var expectedResult = new Integer[]{1, 2, 3, 4};
+        var input = new Integer[]{4, 1, 3, 2, 8, 8, 12, 54};
+        var expectedResult = new Integer[]{1, 2, 3, 4, 8, 8, 12, 54};
 
         // when
         Integer[] result = sorter().sort(input);
