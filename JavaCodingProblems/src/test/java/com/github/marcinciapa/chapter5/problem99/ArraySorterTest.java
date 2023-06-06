@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 abstract class ArraySorterTest<T extends ArraySorter> {
 
-    abstract ArraySorter sorter();
+    abstract T sorter();
 
     @Test
     void shouldFailIfArrayNull() {
