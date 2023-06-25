@@ -6,11 +6,11 @@ import java.util.Collection;
 import static java.util.Collections.unmodifiableList;
 import static java.util.Objects.isNull;
 
-class SelfInventedWrapper<T> implements UnmodifiableWrapper<T> {
+class UnmodifiableListWrapper<T> implements UnmodifiableWrapper<T> {
 
     private final Collection<T> wrapped;
 
-    SelfInventedWrapper(Collection<T> toWrap) {
+    UnmodifiableListWrapper(Collection<T> toWrap) {
         if (isNull(toWrap)) {
             throw new IllegalArgumentException();
         }
