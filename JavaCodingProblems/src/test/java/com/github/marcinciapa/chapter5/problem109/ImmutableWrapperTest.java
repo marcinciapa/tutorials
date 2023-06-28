@@ -9,9 +9,9 @@ import static java.util.List.of;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-abstract class UnmodifiableWrapperTest<T extends UnmodifiableWrapper<MutableObject>> {
+abstract class ImmutableWrapperTest<T extends UnmodifiableWrapper<ImmutableObject>> {
 
-    abstract T wrapper(Collection<MutableObject> collection);
+    abstract T wrapper(Collection<ImmutableObject> collection);
 
     @Test
     void shouldFailWhenInitializedWithNull() {
@@ -22,24 +22,18 @@ abstract class UnmodifiableWrapperTest<T extends UnmodifiableWrapper<MutableObje
     void shouldWrapNonEmptyCollection() {
         // given
         var collectionToWrap = new ArrayList<>(of(
-                new MutableObject(1),
-                new MutableObject(2),
-                new MutableObject(3)
-        ));
-        var collectionAfterMutation = new ArrayList<>(of(
-                new MutableObject(4),
-                new MutableObject(2),
-                new MutableObject(3)
+                new ImmutableObject(1),
+                new ImmutableObject(2),
+                new ImmutableObject(3)
         ));
 
         // when
         T wrapper = wrapper(collectionToWrap);
-        Collection<MutableObject> wrapped = wrapper.unmodifiable();
+        Collection<ImmutableObject> wrapped = wrapper.unmodifiable();
 
         // then
         assertEquals(collectionToWrap, wrapped);
-        assertThrows(UnsupportedOperationException.class, () -> wrapped.add(new MutableObject(4)));
-        wrapped.iterator().next().value = 4;
-        assertEquals(collectionAfterMutation, wrapped);
+        assertThrows(UnsupportedOperationException.class, () -> wrapped.add(new ImmutableObject(4)));
+        // wrapped.iterator().next().value = 4; OBJECT IS IMMUTABLE!
     }
 }
