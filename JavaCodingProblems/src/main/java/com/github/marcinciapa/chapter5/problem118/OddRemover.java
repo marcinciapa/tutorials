@@ -4,5 +4,5 @@ import java.util.List;
 
 interface OddRemover {
 
-    void removeOdd(List<Integer> number);
+    void removeOdd(List<Integer> numbers);
 }
