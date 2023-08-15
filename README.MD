@@ -8,3 +8,6 @@ a warmup before starting solving more complex problems.
 [SpringBootTutorial](SpringBootTutorial/README.MD) a project for a tutorial for Spring Boot.
 
 [SpringBootAngularFullStackTutorial](SpringBootAngularFullStackTutorial/README.MD) a project for a tutorial for Spring Boot and Angular full stack.
+
+[SpringBootJdbcFlywayTutorial](SpringBootJdbcFlywayTutorial/README.MD) a project for a tutorial for Spring Boot JDBC and Flyway.
+
