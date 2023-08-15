@@ -11,3 +11,4 @@ a warmup before starting solving more complex problems.
 
 [SpringBootJdbcFlywayTutorial](SpringBootJdbcFlywayTutorial/README.MD) a project for a tutorial for Spring Boot JDBC and Flyway.
 
+[SpringBootJooqTutorial](SpringBootJooqTutorial/README.MD) a project for a tutorial for Spring Boot Jooq.
