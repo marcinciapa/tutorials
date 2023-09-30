@@ -3,6 +3,7 @@ Elasticsearch tutorial.
 This tutorial (and codebase) uses Spring 2.5.0. In latest releases some classes were deprecates.
 
 # Scope
+
 Lesson 1: Indexing document using Spring Data Repository, index create by annotation
 Lesson 2: Indexing document using RestHighLevelClient, index created by RestHighLevelClient on startup
 
@@ -18,3 +19,6 @@ Run the class `SpringDataElasticSearchApplication` in IntelliJ
 - Document can be mapped to Elasticsearch document using annotations (Person) or using mapping JSON file (
   resources/mappings/vehicle.json).
 - Mappings JSON file must have the same name as index.
+- While composing a query with Elasticsearch library, we can define which fields should match the search term. But
+  should it be defined in the code, or should it be defined in the Elasticsearch config? Probably no. We should define a
+  query in a code. But match _score should be configured in Elastic. Or not?

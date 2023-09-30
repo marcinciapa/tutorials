@@ -1,9 +1,12 @@
 package com.github.marcinciapa.SpringDataElasticSearch.controller;
 
 import com.github.marcinciapa.SpringDataElasticSearch.document.Vehicle;
+import com.github.marcinciapa.SpringDataElasticSearch.search.SearchRequestDTO;
 import com.github.marcinciapa.SpringDataElasticSearch.service.VehicleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/vehicle")
@@ -23,5 +26,10 @@ public class VehicleController {
     @GetMapping("/{id}")
     public Vehicle findById(@PathVariable final String id) {
         return service.getById(id);
+    }
+
+    @PostMapping("/search")
+    public List<Vehicle> search(@RequestBody final SearchRequestDTO dto) {
+        return service.search(dto);
     }
 }
