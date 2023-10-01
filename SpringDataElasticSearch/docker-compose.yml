@@ -1,0 +1,17 @@
+version: '3'
+services:
+
+  spring-data-elasticsearch-tutorial:
+    image: 'elasticsearch:7.13.1'
+    ports:
+      - 9200:9200
+      - 9300:9300
+    environment:
+      discovery.type: single-node
+      xpack.security.enabled: false
+      xpack.security.http.ssl.enabled: false
+      xpack.security.transport.ssl.enabled: false
+
+networks:
+  default:
+    name: elasticsearch-network

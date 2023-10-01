@@ -1,0 +1,57 @@
+// Recreate indices:
+POST localhost:8080/api/index/recreate
+
+// Insert dummy data to vehicle index
+POST localhost:8080/api/vehicle/insertdummydata
+
+// Index a person:
+POST localhost:8080/api/person
+{
+    "id": 1,
+    "name": "Jason"
+}
+
+// Get person by ID:
+GET localhost:8080/api/person/1
+
+// Index a vehicle:
+POST localhost:8080/api/vehicle
+{
+    "id": "1",
+    "number": "XX 11111",
+    "name": "BMW M5",
+    "created": "2023-10-01"
+}
+
+// Get vehicle by ID:
+GET localhost:8080/api/vehicle/1
+
+// Search vehicles:
+POST localhost:8080/api/vehicle/search
+{
+    "fields": ["name"],
+    "searchTerm": "BMW",
+    "sortBy": "created",
+    "order": "ASC"
+}
+
+// Search vehicles (with pagination):
+POST localhost:8080/api/vehicle/search
+{
+    "fields": ["name"],
+    "searchTerm": "audi",
+    "order": "ASC",
+    "page": 0,
+    "size": 2
+}
+
+// Get vehicles created since:
+GET localhost:8080/api/vehicle/search/2023-10-01
+
+// Search vehicles created since:
+POST localhost:8080/api/vehicle/searchcreatedsince/2023-10-01
+{
+    "fields": ["name"],
+    "searchTerm": "Audi",
+    "order": "ASC"
+}
