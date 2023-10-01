@@ -6,6 +6,8 @@ This tutorial (and codebase) uses Spring 2.5.0. In latest releases some classes 
 
 Lesson 1: Indexing document using Spring Data Repository, index create by annotation
 Lesson 2: Indexing document using RestHighLevelClient, index created by RestHighLevelClient on startup
+Lesson 3: Executing match query
+Lesson 4: Applying sort order
 
 # Running
 
