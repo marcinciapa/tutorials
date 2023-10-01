@@ -21,7 +21,7 @@ POST localhost:8080/api/vehicle
 }
 
 // Get vehicle by ID:
-GET localhost:8080/api/vehicle/2
+GET localhost:8080/api/vehicle/1
 
 // Search vehicles:
 POST localhost:8080/api/vehicle/search
@@ -31,3 +31,6 @@ POST localhost:8080/api/vehicle/search
     "sortBy": "created",
     "order": "ASC"
 }
+
+// Search vehicles created since:
+GET localhost:8080/api/vehicle/search/2016-10-01
