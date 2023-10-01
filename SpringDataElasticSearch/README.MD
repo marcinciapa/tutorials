@@ -10,6 +10,7 @@ Lesson 3: Executing match query
 Lesson 4: Applying sort order
 Lesson 5: Applying range query
 Lesson 6: Combining queries with bool query
+Lesson 7: Applying pagination
 
 # Running
 
@@ -40,3 +41,4 @@ There is a file named `requests.txt` containing example HTTP requests to interac
 - In a query we can influence match score of each term by setting the `minimumShouldMatch` property (how many should
   queries should match, allows building more precise query.
 - If there are multiple should queries, at lest one must match. If none of them matches, there will be no results.
+- Pagination implemented with Elasticsearch limit/offset equivalent.

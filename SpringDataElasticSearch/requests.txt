@@ -35,6 +35,16 @@ POST localhost:8080/api/vehicle/search
     "order": "ASC"
 }
 
+// Search vehicles (with pagination):
+POST localhost:8080/api/vehicle/search
+{
+    "fields": ["name"],
+    "searchTerm": "audi",
+    "order": "ASC",
+    "page": 0,
+    "size": 2
+}
+
 // Get vehicles created since:
 GET localhost:8080/api/vehicle/search/2023-10-01
 
