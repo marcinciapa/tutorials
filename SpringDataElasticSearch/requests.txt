@@ -1,6 +1,9 @@
 // Recreate indices:
 POST localhost:8080/api/index/recreate
 
+// Insert dummy data to vehicle index
+POST localhost:8080/api/vehicle/insertdummydata
+
 // Index a person:
 POST localhost:8080/api/person
 {
@@ -32,5 +35,13 @@ POST localhost:8080/api/vehicle/search
     "order": "ASC"
 }
 
+// Get vehicles created since:
+GET localhost:8080/api/vehicle/search/2023-10-01
+
 // Search vehicles created since:
-GET localhost:8080/api/vehicle/search/2016-10-01
+POST localhost:8080/api/vehicle/searchcreatedsince/2023-10-01
+{
+    "fields": ["name"],
+    "searchTerm": "Audi",
+    "order": "ASC"
+}
