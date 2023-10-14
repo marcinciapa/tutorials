@@ -2,12 +2,12 @@ Codebase for [YouTube course](https://www.youtube.com/playlist?list=PLXy8DQl3058
 
 # Scope
 
-Lesson 1: Starting and stopping Quartz scheduler
-Lesson 2: Configuring Quartz Job and Trigger
-Lesson 3: Scheduling a job
-Lesson 4: Fetching running timers
-Lesson 5: Updating and deleting timers
-Lesson 6: Quartz jobs persistence
+- Lesson 1: Starting and stopping Quartz scheduler
+- Lesson 2: Configuring Quartz Job and Trigger
+- Lesson 3: Scheduling a job
+- Lesson 4: Fetching running timers
+- Lesson 5: Updating and deleting timers
+- Lesson 6: Quartz jobs persistence
 
 # Running
 Running the application requires local MySQL instance running in Docker:
