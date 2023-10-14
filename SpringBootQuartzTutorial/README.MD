@@ -4,6 +4,7 @@ Codebase for [YouTube course](https://www.youtube.com/playlist?list=PLXy8DQl3058
 
 Lesson 1: Starting and stopping Quartz scheduler
 Lesson 2: Configuring Quartz Job and Trigger
+Lesson 3: Scheduling a job
 
 # Running
 
@@ -11,6 +12,7 @@ Run the class `SpringBootQuartzTutorialApplication` in IntelliJ
 
 # Testing
 
+There is a file named `requests.txt` containing example HTTP requests to interact with application.
 
 # What I learned
 
