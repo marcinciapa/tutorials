@@ -6,6 +6,7 @@ Lesson 1: Starting and stopping Quartz scheduler
 Lesson 2: Configuring Quartz Job and Trigger
 Lesson 3: Scheduling a job
 Lesson 4: Fetching running timers
+Lesson 5: Updating and deleting timers
 
 # Running
 
@@ -18,5 +19,6 @@ There is a file named `requests.txt` containing example HTTP requests to interac
 # What I learned
 
 - Timer jobs may be split into **groups** (for example database jobs can be grouped together).
-- Running jobs may be fetched from Quartz scheduler;
+- Running jobs may be fetched from Quartz scheduler.
+- A listener for trigger execution can be implemented.
 

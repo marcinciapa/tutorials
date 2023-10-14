@@ -6,3 +6,6 @@ GET http://localhost:8080/api/timer
 
 // Get running job by ID
 GET http://localhost:8080/api/timer/HelloWorldJob
+
+// delete running job by ID
+DELETE http://localhost:8080/api/timer/HelloWorldJob
