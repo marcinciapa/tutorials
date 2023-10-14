@@ -3,6 +3,7 @@ Codebase for [YouTube course](https://www.youtube.com/playlist?list=PLXy8DQl3058
 # Scope
 
 Lesson 1: Starting and stopping Quartz scheduler
+Lesson 2: Configuring Quartz Job and Trigger
 
 # Running
 
