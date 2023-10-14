@@ -1,2 +1,8 @@
 // Start hello world job
 POST http://localhost:8080/api/timer/runhelloworld
+
+// Get all running jobs
+GET http://localhost:8080/api/timer
+
+// Get running job by ID
+GET http://localhost:8080/api/timer/HelloWorldJob
