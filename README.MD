@@ -13,5 +13,6 @@ a warmup before starting solving more complex problems.
 
 [SpringBootJooqTutorial](SpringBootJooqTutorial/README.MD) a project for a tutorial for Spring Boot Jooq.
 
-[SpringDataElasticSearch](SpringDataElasticSearch/README.MD) a project for tutorial for Spring Data Elasticsearch.
+[SpringDataElasticSearch](SpringDataElasticSearch/README.MD) a project for a tutorial for Spring Data Elasticsearch.
 
+[SpringBootQuartzTutorial](SpringBootQuartzTutorial/README.MD) a project for a tutorial for SpringBoot and Quartz Scheduler.
