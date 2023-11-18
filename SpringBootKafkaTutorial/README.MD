@@ -22,7 +22,13 @@ Consuming Kafka messages:
 bin/kafka-console-consumer.sh --topic amigoscode --from-beginning --bootstrap-server localhost:9092
 ```
 
+There is a file named `requests.txt` containing example HTTP requests to interact with application.
+
 # What I learned
 - Kafka topic is a durable collection of events, replicated (between nodes) and partitioned, small or big.
 - Comparing to RabbitMQ Kafka has better throughput, build-in partitioning, replication and fault-tolerance. It offers built-in stream processing.
 - Broker is a VM running the Kafka process.
+
+# Further reading
+- https://docs.spring.io/spring-kafka/docs/current/reference/html/
+- https://kafka.apache.org/documentation/
