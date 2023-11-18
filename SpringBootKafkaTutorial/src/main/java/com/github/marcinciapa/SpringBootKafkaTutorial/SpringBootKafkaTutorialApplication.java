@@ -9,14 +9,16 @@ import org.springframework.kafka.core.KafkaTemplate;
 @SpringBootApplication
 public class SpringBootKafkaTutorialApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpringBootKafkaTutorialApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(SpringBootKafkaTutorialApplication.class, args);
+    }
 
-	@Bean
-	CommandLineRunner commandLineRunner(KafkaTemplate<String, String> kafkaTemplate) {
-		return args -> {
-			kafkaTemplate.send("amigoscode", "hello kafka");
-		};
-	}
+    @Bean
+    CommandLineRunner commandLineRunner(KafkaTemplate<String, String> kafkaTemplate) {
+        return args -> {
+            for (int i = 0; i < 100; i++) {
+                kafkaTemplate.send("amigoscode", "hello kafka :) " + i);
+            }
+        };
+    }
 }

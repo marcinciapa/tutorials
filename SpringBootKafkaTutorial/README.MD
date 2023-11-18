@@ -17,6 +17,10 @@ rm -rf /tmp/kafka-logs /tmp/zookeeper /tmp/kraft-combined-logs
 ```
 
 # Testing
+Consuming Kafka messages:
+```
+bin/kafka-console-consumer.sh --topic amigoscode --from-beginning --bootstrap-server localhost:9092
+```
 
 # What I learned
 - Kafka topic is a durable collection of events, replicated (between nodes) and partitioned, small or big.
