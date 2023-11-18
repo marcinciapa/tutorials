@@ -10,6 +10,12 @@ bin/zookeeper-server-start.sh config/zookeeper.properties
 bin/kafka-server-start.sh config/server.properties
 ```
 
+# Cleanup
+To clean up Kafka environment, after stopping Kafka and Zookeeper processes, run:
+```
+rm -rf /tmp/kafka-logs /tmp/zookeeper /tmp/kraft-combined-logs
+```
+
 # Testing
 
 # What I learned
