@@ -16,3 +16,5 @@ a warmup before starting solving more complex problems.
 [SpringDataElasticSearch](SpringDataElasticSearch/README.MD) a project for a tutorial for Spring Data Elasticsearch.
 
 [SpringBootQuartzTutorial](SpringBootQuartzTutorial/README.MD) a project for a tutorial for SpringBoot and Quartz Scheduler.
+
+[SpringBootKafkaTutorial](SpringBootKafkaTutorial/README.MD) a project for a tutorial for SpringBoot and Kafka.
