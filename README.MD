@@ -18,3 +18,5 @@ a warmup before starting solving more complex problems.
 [SpringBootQuartzTutorial](SpringBootQuartzTutorial/README.MD) a project for a tutorial for SpringBoot and Quartz Scheduler.
 
 [SpringBootKafkaTutorial](SpringBootKafkaTutorial/README.MD) a project for a tutorial for SpringBoot and Kafka.
+
+[MicroservicesAndDistributedSystems](MicroservicesAndDistributedSystems/README.MD) a project for a course for Microservices and Distributed Systems (by Amigoscode).
