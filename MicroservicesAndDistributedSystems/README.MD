@@ -1,4 +1,4 @@
-Code for [Microservices and Distributed Services course](https://app.amigoscode.com/p/microservices)
+Code for [Microservices and Distributed Systems course](https://app.amigoscode.com/p/microservices)
 
 # What I learned
 
@@ -17,3 +17,7 @@ Code for [Microservices and Distributed Services course](https://app.amigoscode.
   POM's `<dependencyManagement>` section.
 
 ## Your First Microservice
+
+## Microservice Communication via HTTP
+
+- To make use of generated data from Spring Data JPA save, `save()` must be replaced with `saveAndFlush`.
