@@ -7,9 +7,14 @@
   <groupId>com.github.marcinciapa</groupId>
   <artifactId>amigosservices</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
 
   <name>amigosservices</name>
   <url>https://github.com/marcinciapa/tutorials/tree/master/MicroservicesAndDistributedSystems</url>
+
+  <modules>
+    <module>customer</module>
+  </modules>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
