@@ -20,4 +20,9 @@ Code for [Microservices and Distributed Systems course](https://app.amigoscode.c
 
 ## Microservice Communication via HTTP
 
-- To make use of generated data from Spring Data JPA save, `save()` must be replaced with `saveAndFlush`.
+- To make use of generated data from Spring Data JPA save, `save()` must be replaced with `saveAndFlush()`.
+
+## Service Discovery with Eureka
+
+- It's easy to start another Spring Boot application on different port by copying the configuration in Intellij and
+  providing `--server.port` program argument.
