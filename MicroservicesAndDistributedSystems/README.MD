@@ -26,3 +26,5 @@ Code for [Microservices and Distributed Systems course](https://app.amigoscode.c
 
 - It's easy to start another Spring Boot application on different port by copying the configuration in Intellij and
   providing `--server.port` program argument.
+
+## Open Feign
