@@ -1,4 +1,4 @@
-package com.github.marcinciapa.fraud;
+package com.github.marcinciapa.clients;
 
 public record FraudCheckResponse(Boolean isFraudster) {
 }
