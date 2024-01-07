@@ -1,4 +1,4 @@
-package com.github.marcinciapa.clients;
+package com.github.marcinciapa.clients.fraud;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
