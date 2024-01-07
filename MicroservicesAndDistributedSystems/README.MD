@@ -30,3 +30,8 @@ Code for [Microservices and Distributed Systems course](https://app.amigoscode.c
 ## Open Feign
 
 ## Exercise
+
+## Distributed Tracing
+
+- Trace ID is constant through the entire communication since it's initiated (spans). Span ID is created and constant
+  within a single service.

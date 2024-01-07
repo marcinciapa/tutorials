@@ -16,6 +16,8 @@ spring:
     hibernate:
       ddl-auto: create-drop # don't do it on production or environment where you want to keep your data
     show-sql: 'true'
+  zipkin:
+    base-url: http://localhost:9411 # defult
 eureka:
   client:
     service-url:
