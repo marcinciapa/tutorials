@@ -1,6 +1,6 @@
 package com.github.marcinciapa.fraud;
 
-import com.github.marcinciapa.clients.FraudCheckResponse;
+import com.github.marcinciapa.clients.fraud.FraudCheckResponse;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
