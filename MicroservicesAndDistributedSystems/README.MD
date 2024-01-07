@@ -28,3 +28,5 @@ Code for [Microservices and Distributed Systems course](https://app.amigoscode.c
   providing `--server.port` program argument.
 
 ## Open Feign
+
+## Exercise
