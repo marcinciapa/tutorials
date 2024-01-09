@@ -29,9 +29,23 @@ Code for [Microservices and Distributed Systems course](https://app.amigoscode.c
 
 ## Open Feign
 
+- Open Feign is a nice way of exposing unified API clients across Spring applications.
+
 ## Exercise
 
 ## Distributed Tracing
 
 - Trace ID is constant through the entire communication since it's initiated (spans). Span ID is created and constant
   within a single service.
+- Sleuth (from Spring Cloud) is a sufficient tool to set traceId and spanId for applications communicating with each
+  other.
+- Sleuth offers an out-of-the-box integration with Zipkin by adding a single dependency from Spring Cloud.
+
+## Api Gateway With Spring Cloud Gateway
+
+- There are multiple concerns because of which managed load balancers should be used on Production, like: TLS,
+  Certificate Management, Authentication, High Availability, Logging, Caching, Path Based Routing etc.
+- Load balancers should maintain health checks to determine if the target may accept traffic. Health checks should be
+  implemented on application side to check, for example, if the database connection works fine.
+- Spring Cloud Gateway allows to quickly spin up a simplified load balancer in Spring ecosystem.
+- External traffic should not access services in private network directly. It should be done via a load balancer.
