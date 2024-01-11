@@ -49,3 +49,8 @@ Code for [Microservices and Distributed Systems course](https://app.amigoscode.c
   implemented on application side to check, for example, if the database connection works fine.
 - Spring Cloud Gateway allows to quickly spin up a simplified load balancer in Spring ecosystem.
 - External traffic should not access services in private network directly. It should be done via a load balancer.
+
+## Message Queues
+
+- RabbitMQ can use message header instead of routing key to define a mapping between an exchange and a queue.
+- For nameless exchange type, binding is defined to send message to a queue when routing key matches queue name.
