@@ -1,5 +1,6 @@
 package com.github.marcinciapa.customer;
 
+import com.github.marcinciapa.amqp.RabbitMQMessageProducer;
 import com.github.marcinciapa.clients.fraud.FraudCheckResponse;
 import com.github.marcinciapa.clients.fraud.FraudClient;
 import com.github.marcinciapa.clients.notification.NotificationClient;
@@ -13,7 +14,7 @@ public class CustomerService {
 
     private final CustomerRepository customerRepository;
     private final FraudClient fraudClient;
-    private final NotificationClient notificationClient;
+    private final RabbitMQMessageProducer rabbitMQMessageProducer;
 
     public void registerCustomer(CustomerRegistrationRequest request) {
         Customer customer = Customer.builder()
@@ -34,6 +35,10 @@ public class CustomerService {
                 customer.getEmail(),
                 "Welcome"
         );
-        notificationClient.sendNotification(notificationRequest);
+        rabbitMQMessageProducer.publish(
+                notificationRequest,
+                "internal.exchange",
+                "internal.notification.routing.key"
+        );
     }
 }
