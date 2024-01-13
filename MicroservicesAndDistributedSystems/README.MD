@@ -58,3 +58,10 @@ Code for [Microservices and Distributed Systems course](https://app.amigoscode.c
 ## RabbitMQ
 
 - It's possible to customize RabbitTemplate with a custom message converter (like customized Jackson ObjectMapper).
+
+## Packaging Microservices to Runnable Jar
+
+- Maven plugins added to parent POM are available in modules POMs.
+- Maven pluginsManagement allows controlling plugin versions in modules' POMs.
+- It's not enough to package SpringBoot application into a Jar to run it. `spring-boot-maven-plugin` is required.
+  Executable Jars are created in the `repackage` goal.
