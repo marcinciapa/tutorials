@@ -54,3 +54,7 @@ Code for [Microservices and Distributed Systems course](https://app.amigoscode.c
 
 - RabbitMQ can use message header instead of routing key to define a mapping between an exchange and a queue.
 - For nameless exchange type, binding is defined to send message to a queue when routing key matches queue name.
+
+## RabbitMQ
+
+- It's possible to customize RabbitTemplate with a custom message converter (like customized Jackson ObjectMapper).
