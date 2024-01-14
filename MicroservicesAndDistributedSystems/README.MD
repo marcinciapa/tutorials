@@ -62,7 +62,8 @@ Code for [Microservices and Distributed Systems course](https://app.amigoscode.c
 ## Packaging Microservices to Runnable Jar
 
 - Maven plugins added to parent POM are available in modules POMs.
-- Maven pluginsManagement allows controlling plugin versions in modules' POMs.
+- Maven pluginsManagement allows controlling plugin versions in modules' POMs. It also allows to define shared plugins'
+  configurations.
 - It's not enough to package SpringBoot application into a Jar to run it. `spring-boot-maven-plugin` is required.
   Executable Jars are created in the `repackage` goal.
 
@@ -71,4 +72,5 @@ Code for [Microservices and Distributed Systems course](https://app.amigoscode.c
 - Docker Daemon in Docker Host is an instance, with which Docker Client interacts to perform build, run, pull etc.
 - SpringBoot Maven Plugin can generate Docker image (OCI image) from Jar file.
 - For Docker image it's possible to specify a hash, to narrow particular version of the image.
-- Maven Profiles allow to configure the build depending on the build environment
+- Maven Profiles allow to configure the build depending on the build environment. In this example, modules
+  have `build-docker-image`, which causes `package` lifecycle to build and push Docker images after building Jar files.
