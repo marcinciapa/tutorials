@@ -74,3 +74,8 @@ Code for [Microservices and Distributed Systems course](https://app.amigoscode.c
 - For Docker image it's possible to specify a hash, to narrow particular version of the image.
 - Maven Profiles allow to configure the build depending on the build environment. In this example, modules
   have `build-docker-image`, which causes `package` lifecycle to build and push Docker images after building Jar files.
+- While publishing Docker container's port, when localhost is specified, port is open only for the Docker host, not
+  outside: `-p 127.0.0.1:8080:8080`
+- Docker containers share Docker host DNS configuration from `etc/resolv.conf`. It can be overwritten by providing DNS
+  server after `--dns` flag. Multiple `--dns` properties may be provided.
+- When docker network exists between containers, the communication between them requires using container name as URL.
