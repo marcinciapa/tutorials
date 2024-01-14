@@ -79,3 +79,5 @@ Code for [Microservices and Distributed Systems course](https://app.amigoscode.c
 - Docker containers share Docker host DNS configuration from `etc/resolv.conf`. It can be overwritten by providing DNS
   server after `--dns` flag. Multiple `--dns` properties may be provided.
 - When docker network exists between containers, the communication between them requires using container name as URL.
+- `docker compose pull` allows to refresh the current versions of images. `docker compose stop` stops container,
+  comparing to `docker compose down`, which also removed them.
