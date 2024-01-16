@@ -73,11 +73,37 @@ Code for [Microservices and Distributed Systems course](https://app.amigoscode.c
 - SpringBoot Maven Plugin can generate Docker image (OCI image) from Jar file.
 - For Docker image it's possible to specify a hash, to narrow particular version of the image.
 - Maven Profiles allow to configure the build depending on the build environment. In this example, modules
-  have `build-docker-image`, which causes `package` lifecycle to build and push Docker images after building Jar files.
+  have `build-docker-image` profile, which causes `package` lifecycle to build and push Docker images after building Jar
+  files.
 - While publishing Docker container's port, when localhost is specified, port is open only for the Docker host, not
   outside: `-p 127.0.0.1:8080:8080`
 - Docker containers share Docker host DNS configuration from `etc/resolv.conf`. It can be overwritten by providing DNS
   server after `--dns` flag. Multiple `--dns` properties may be provided.
 - When docker network exists between containers, the communication between them requires using container name as URL.
 - `docker compose pull` allows to refresh the current versions of images. `docker compose stop` stops container,
-  comparing to `docker compose down`, which also removed them.
+  comparing to `docker compose down`, which also removes them.
+
+## Kubernetes AKA k8s
+
+- etcd is a distributed Kubernetes key-value store, which keeps configuration and state of the Kubernetes cluster.
+- Scheduler is watching for pods and assigns them to nodes basing on the available resources and other scheduling
+  factors.
+- Controller Manager manages the control loop. It controls other controllers (Deployments, StatefulSets), responsible to
+  check the conditions and restore the desired state, when the current state is not desired (like Node
+  Controller, which is responsible for creating a new node, when a node dies).
+- Kubelet is an agent running on every node. Reports containers' state to API server.
+- Container Runtime is responsible for pulling images, starting containers, stopping containers (for example
+  containerd, Docker).
+- KubeProxy is responsible for managing internal cluster networking.
+- Pod is the smallest deployable unit in k8s. It contains of the main container, init container, side containers,
+  volumes (used to exchange data between containers), and a network (to allow containers to communicate with each other
+  using `localhost`). Pods have assigned IP address. Pods should never be created manually, controllers (like
+  Deployment, StatefulSet) should be used to create them.
+- Deployment creates ReplicaSets (containing pods) for each application version rollout. Once the new ReplicaSet is
+  ready, the traffic is no longer forwarded to the old ReplicaSet.
+- Service has a stable IP address, DNS name and port.
+- Service discovery in k8s happens through Services.
+- KubeProxy (running on each worker nodes) maintain network rules allowing communication to pods. Implements a
+  controller that watches the API server for new Services and Endpoints. Creates IPVS (IP Virtual Server) rules that
+  tell node to intercept traffic destined to the Service ClusterIP. Redirects traffic to Pods matching Service label
+  selectors (main role).
