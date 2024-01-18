@@ -107,3 +107,8 @@ Code for [Microservices and Distributed Systems course](https://app.amigoscode.c
   controller that watches the API server for new Services and Endpoints. Creates IPVS (IP Virtual Server) rules that
   tell node to intercept traffic destined to the Service ClusterIP. Redirects traffic to Pods matching Service label
   selectors (main role).
+
+## Deploying Postgres RabbitMQ and Zipkin to k8s
+
+- IntelliJ Kubernetes Plugin (for Ultimate only) offers a convenient way to browse k8s resources, opening shell etc.
+- StatefulSet is a controller, which has a stable IP and storage. In case of Deployment, pods are ephemeral.
