@@ -112,3 +112,7 @@ Code for [Microservices and Distributed Systems course](https://app.amigoscode.c
 
 - IntelliJ Kubernetes Plugin (for Ultimate only) offers a convenient way to browse k8s resources, opening shell etc.
 - StatefulSet is a controller, which has a stable IP and storage. In case of Deployment, pods are ephemeral.
+
+## Refactoring Microservices for k8s
+
+- `docker compose ps` allows listing running containers configured in docker-compose descriptor file.

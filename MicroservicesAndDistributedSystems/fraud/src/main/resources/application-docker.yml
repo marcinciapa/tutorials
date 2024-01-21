@@ -24,3 +24,4 @@ eureka:
       defaultZone: http://eureka-server:8761/eureka
     fetch-registry: true # default
     register-with-eureka: true # default
+    enabled: false # for k8s
