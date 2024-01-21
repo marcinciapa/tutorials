@@ -116,3 +116,5 @@ Code for [Microservices and Distributed Systems course](https://app.amigoscode.c
 ## Refactoring Microservices for k8s
 
 - `docker compose ps` allows listing running containers configured in docker-compose descriptor file.
+
+## Deploying Microservices to k8s
