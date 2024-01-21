@@ -120,3 +120,12 @@ Code for [Microservices and Distributed Systems course](https://app.amigoscode.c
 ## Deploying Microservices to k8s
 
 ## Managed Kubernetes Cluster with Linode
+
+- When a service of type LoadBalancer is created, Kubernetes will spin up a load balancer in the cloud provider. This is
+  possible because of
+  the [Cloud Controller Manager](https://kubernetes.io/docs/concepts/architecture/cloud-controller/), which uses cloud
+  provider's API to manage cloud-specific resources (like Nodes, Routing, Services).
+- For the reason above, services of LoadBalancer type have the external IP address. These can be used directly to access
+  resources from the outside of the cluster.
+- Ingress is a native object inside the cluster and can route to multiple services. Load balancers are external to the
+  cluster and can route to a single service.
