@@ -129,3 +129,6 @@ Code for [Microservices and Distributed Systems course](https://app.amigoscode.c
   resources from the outside of the cluster.
 - Ingress is a native object inside the cluster and can route to multiple services. Load balancers are external to the
   cluster and can route to a single service.
+- `kubectl delete -f ${file}` removes the resource described in file. If the file descriptor contains some cloud
+  components definition, these will also be removed. A directory can be also used as a file, resources described by all
+  descriptor files within this directory will be removed.
