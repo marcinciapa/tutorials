@@ -132,3 +132,7 @@ Code for [Microservices and Distributed Systems course](https://app.amigoscode.c
 - `kubectl delete -f ${file}` removes the resource described in file. If the file descriptor contains some cloud
   components definition, these will also be removed. A directory can be also used as a file, resources described by all
   descriptor files within this directory will be removed.
+
+## Kafka
+
+- [Done previously](https://github.com/marcinciapa/tutorials/pull/8)
