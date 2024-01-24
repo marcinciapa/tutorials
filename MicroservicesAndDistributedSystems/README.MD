@@ -118,3 +118,17 @@ Code for [Microservices and Distributed Systems course](https://app.amigoscode.c
 - `docker compose ps` allows listing running containers configured in docker-compose descriptor file.
 
 ## Deploying Microservices to k8s
+
+## Managed Kubernetes Cluster with Linode
+
+- When a service of type LoadBalancer is created, Kubernetes will spin up a load balancer in the cloud provider. This is
+  possible because of
+  the [Cloud Controller Manager](https://kubernetes.io/docs/concepts/architecture/cloud-controller/), which uses cloud
+  provider's API to manage cloud-specific resources (like Nodes, Routing, Services).
+- For the reason above, services of LoadBalancer type have the external IP address. These can be used directly to access
+  resources from the outside of the cluster.
+- Ingress is a native object inside the cluster and can route to multiple services. Load balancers are external to the
+  cluster and can route to a single service.
+- `kubectl delete -f ${file}` removes the resource described in file. If the file descriptor contains some cloud
+  components definition, these will also be removed. A directory can be also used as a file, resources described by all
+  descriptor files within this directory will be removed.
