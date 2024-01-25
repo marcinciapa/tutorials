@@ -136,3 +136,5 @@ Code for [Microservices and Distributed Systems course](https://app.amigoscode.c
 ## Kafka
 
 - [Done previously](https://github.com/marcinciapa/tutorials/pull/8)
+
+## Bringing Back API Gateway for Security

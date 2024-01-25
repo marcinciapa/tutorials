@@ -2,6 +2,8 @@ server:
   port: 8081
 
 spring:
+  profiles:
+    active: default
   application:
     name: fraud
   datasource:
@@ -14,7 +16,7 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: 'true'
     hibernate:
-      ddl-auto: update
+      ddl-auto: create-drop
     show-sql: 'true'
   zipkin:
     base-url: http://localhost:9411 # defult
@@ -24,4 +26,4 @@ eureka:
       defaultZone: http://localhost:8761/eureka
     fetch-registry: true # default
     register-with-eureka: true # default
-    enabled: false # for k8s
+    enabled: true

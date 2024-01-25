@@ -2,6 +2,8 @@ server:
   port: 8082
 
 spring:
+  profiles:
+    active: default
   application:
     name: notification
   datasource:
@@ -26,7 +28,7 @@ eureka:
       defaultZone: http://localhost:8761/eureka
     fetch-registry: true # default
     register-with-eureka: true # default
-    enabled: false # for k8s
+    enabled: true
 rabbitmq:
   exchanges:
     internal: internal.exchange
