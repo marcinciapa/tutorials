@@ -2,6 +2,8 @@ server:
   port: 8080
 
 spring:
+  profiles:
+    active: default
   application:
     name: customer
   datasource:
@@ -26,4 +28,4 @@ eureka:
       defaultZone: http://localhost:8761/eureka
     fetch-registry: true # default
     register-with-eureka: true # default
-    enabled: false # for k8s
+    enabled: true
