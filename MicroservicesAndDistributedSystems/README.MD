@@ -147,3 +147,9 @@ Code for [Microservices and Distributed Systems course](https://app.amigoscode.c
 - Clients receive an API key with authorizations correctly configured.
 - DMZ is part of the internal network accessible from the Internet (bastion, Load Balancer). Anything that can access
   the private network must be in the DMZ.
+
+## Outro
+
+- Spring Cloud Config provides externalized configuration in a distributed system. Kubernetes provides better way of
+  providing configurations (ConfigMaps, Secrets). One less server to manage.
+- Spring Cloud Vault Config supports externalized configuration for secrets management (works with Vault).
