@@ -138,3 +138,12 @@ Code for [Microservices and Distributed Systems course](https://app.amigoscode.c
 - [Done previously](https://github.com/marcinciapa/tutorials/pull/8)
 
 ## Bringing Back API Gateway for Security
+
+## Security - API Key Authentication
+
+- APIManagement application must run in the private network, which maintains the API keys management (expiring, access
+  etc.). Gateway (Load Balancer) contains a filter, which communicates with APIManagement application to check if the
+  API key has access to requested resource. If yes, it forwards the request.
+- Clients receive an API key with authorizations correctly configured.
+- DMZ is part of the internal network accessible from the Internet (bastion, Load Balancer). Anything that can access
+  the private network must be in the DMZ.
