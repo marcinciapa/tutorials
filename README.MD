@@ -20,3 +20,5 @@ a warmup before starting solving more complex problems.
 [SpringBootKafkaTutorial](SpringBootKafkaTutorial/README.MD) a project for a tutorial for SpringBoot and Kafka.
 
 [MicroservicesAndDistributedSystems](MicroservicesAndDistributedSystems/README.MD) a project for a course for Microservices and Distributed Systems (by Amigoscode).
+
+[SpringSecurityTutorial](SpringSecurityTutorial/README.MD) a project for a tutorial for Spring Security.
