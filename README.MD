@@ -22,3 +22,5 @@ a warmup before starting solving more complex problems.
 [MicroservicesAndDistributedSystems](MicroservicesAndDistributedSystems/README.MD) a project for a course for Microservices and Distributed Systems (by Amigoscode).
 
 [SpringSecurityTutorial](SpringSecurityTutorial/README.MD) a project for a tutorial for Spring Security.
+
+[SpringBootSecurityTutorial](SpringBootSecurityTutorial/README.MD) a project for Spring Boot 3 + Spring Security 6 totorial.

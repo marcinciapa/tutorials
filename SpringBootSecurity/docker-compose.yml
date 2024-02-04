@@ -1,0 +1,16 @@
+services:
+  postgres:
+    container_name: bootsecurity-postgres
+    image: postgres:15.5
+    environment:
+      POSTGRES_USER: bootsecurity
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: jwt_security
+      PGDATA: /data/postgres
+    volumes:
+      - bootsecurity-postgres:/data/postgres
+    ports:
+      - "5432:5432"
+
+volumes:
+  bootsecurity-postgres:
