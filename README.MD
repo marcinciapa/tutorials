@@ -24,3 +24,5 @@ a warmup before starting solving more complex problems.
 [SpringSecurityTutorial](SpringSecurityTutorial/README.MD) a project for a tutorial for Spring Security.
 
 [SpringBootSecurityTutorial](SpringBootSecurityTutorial/README.MD) a project for Spring Boot 3 + Spring Security 6 totorial.
+
+[GettingStartedWithPython](GettingStartedWithPython/README.MD) a project for a course Getting Started With Python (by Amigoscode).
