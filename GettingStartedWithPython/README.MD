@@ -13,4 +13,8 @@ Code for [Getting Started With Python course](https://www.amigoscode.com/courses
   are re-declared. However, specifying a type as also possible after `:`.
 - Type of the variable can be obtained using `type(variable)` function
 - Python is a dynamically typed language - types of variables are checked at runtime
-- Indentations matter in Python. Sub-procedures need to be indented. 
+- Indentations matter in Python. Sub-procedures need to be indented.
+
+## Operators
+
+- Python has `**` operator, which is POW
