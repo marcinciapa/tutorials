@@ -18,3 +18,9 @@ Code for [Getting Started With Python course](https://www.amigoscode.com/courses
 ## Operators
 
 - Python has `**` operator, which is POW
+
+## Control Flow
+
+- It's possible, when adding `f` letter before a string, to inform Python, that the string is formatted and contains
+  placeholders. Placeholders will be replaced with values.
+- Ternary operator in Python replaces `?` with `if` and `:` with `else`. Pretty simple and convenient. 
