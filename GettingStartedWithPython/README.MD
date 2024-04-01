@@ -23,4 +23,17 @@ Code for [Getting Started With Python course](https://www.amigoscode.com/courses
 
 - It's possible, when adding `f` letter before a string, to inform Python, that the string is formatted and contains
   placeholders. Placeholders will be replaced with values.
-- Ternary operator in Python replaces `?` with `if` and `:` with `else`. Pretty simple and convenient. 
+- Ternary operator in Python replaces `?` with `if` and `:` with `else`. Pretty simple and convenient.
+
+## Data structures
+
+- List in Python can contain values of different types
+- `in` is a comparison in python, which returns true, when elements is present in collection
+- List's `remove` method removes only the first instance of value
+- `del` statement removes element from a list by index. It also allows removing elements of range (`del numbers[0:3]`,
+  upper bound exclusive). When the range is exceeded, the error is not thrown. 
+- Lists are defined with `[]`. Sets are defined with `{}`.
+- Order is not maintained in sets.
+- Python has convenient operators to handle set operations (union, intersection, difference)
+- Dictionary `{key: value}` is an equivalent of Map
+
