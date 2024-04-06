@@ -37,3 +37,6 @@ Code for [Getting Started With Python course](https://www.amigoscode.com/courses
 - Python has convenient operators to handle set operations (union, intersection, difference)
 - Dictionary `{key: value}` is an equivalent of Map
 
+## Loops
+
+- `while` loop in Python may have `else` statement, which is invoked as soon as `while` condition is not met
