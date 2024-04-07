@@ -40,3 +40,9 @@ Code for [Getting Started With Python course](https://www.amigoscode.com/courses
 ## Loops
 
 - `while` loop in Python may have `else` statement, which is invoked as soon as `while` condition is not met
+
+## Functions
+
+- Function definition starts with `def` keyword in Python
+- It's easy to specify default values for arguments with value assignment: (`def greet(name, age=-1)`)
+- It's possible to import the entire module (`import math`) or a single function from module (`from math import isqrt`)
