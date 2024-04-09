@@ -31,7 +31,7 @@ Code for [Getting Started With Python course](https://www.amigoscode.com/courses
 - `in` is a comparison in python, which returns true, when elements is present in collection
 - List's `remove` method removes only the first instance of value
 - `del` statement removes element from a list by index. It also allows removing elements of range (`del numbers[0:3]`,
-  upper bound exclusive). When the range is exceeded, the error is not thrown. 
+  upper bound exclusive). When the range is exceeded, the error is not thrown.
 - Lists are defined with `[]`. Sets are defined with `{}`.
 - Order is not maintained in sets.
 - Python has convenient operators to handle set operations (union, intersection, difference)
@@ -46,3 +46,12 @@ Code for [Getting Started With Python course](https://www.amigoscode.com/courses
 - Function definition starts with `def` keyword in Python
 - It's easy to specify default values for arguments with value assignment: (`def greet(name, age=-1)`)
 - It's possible to import the entire module (`import math`) or a single function from module (`from math import isqrt`)
+
+## Classes
+
+- A constructor in Python is defined as `def __init__(self...)`.
+- All methods in Python class takes `self` as the first argument.
+- Attributes of an object can be defined in a constructor, or in any other method. But they can be referenced after they
+  were defined. 
+- In python overriding `__str__(self)` works the same as overriding `toString()` in Java
+
