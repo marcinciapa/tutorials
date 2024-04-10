@@ -55,3 +55,7 @@ Code for [Getting Started With Python course](https://www.amigoscode.com/courses
   were defined. 
 - In python overriding `__str__(self)` works the same as overriding `toString()` in Java
 
+## Working with dates
+
+- `datetime` module contains `datetime` and `date` modules containing date time functions (`now()`, `today()` etc)
+- `datetime` object contains `strftime` method allowing formatting date and time
