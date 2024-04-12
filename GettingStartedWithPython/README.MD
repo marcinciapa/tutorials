@@ -52,10 +52,20 @@ Code for [Getting Started With Python course](https://www.amigoscode.com/courses
 - A constructor in Python is defined as `def __init__(self...)`.
 - All methods in Python class takes `self` as the first argument.
 - Attributes of an object can be defined in a constructor, or in any other method. But they can be referenced after they
-  were defined. 
+  were defined.
 - In python overriding `__str__(self)` works the same as overriding `toString()` in Java
 
 ## Working with dates
 
 - `datetime` module contains `datetime` and `date` modules containing date time functions (`now()`, `today()` etc)
 - `datetime` object contains `strftime` method allowing formatting date and time
+
+## Working with files
+
+- To create a file it's enough to open a new file with `"w"` (write) mode: `open("file_name", "w")`
+- File should be closed (`file.close()`) after working with it
+- There is a convenient way to iterate through the lines of file (`for line in file:`) and extracting lines to
+  collection: `file.readLines()`
+- `with` syntax of working with files removes the need to close the file after operations on it. It works as try with
+  resource in Java.
+- It's easy to check if file exists after importing and using `os.path.isfile(file_name)`
