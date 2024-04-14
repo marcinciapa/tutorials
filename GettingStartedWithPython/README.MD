@@ -74,3 +74,8 @@ Code for [Getting Started With Python course](https://www.amigoscode.com/courses
 
 - `request` from `urllib` module serves for HTTP communication
 - `json` module helps to parse JSON objects
+
+## Modules
+
+- `pip3` is a package manager. It allows us to download packages created by other and make them available for us.
+- Couldn't make `pyttsx3` running.
