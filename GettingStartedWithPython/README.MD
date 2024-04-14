@@ -69,3 +69,8 @@ Code for [Getting Started With Python course](https://www.amigoscode.com/courses
 - `with` syntax of working with files removes the need to close the file after operations on it. It works as try with
   resource in Java.
 - It's easy to check if file exists after importing and using `os.path.isfile(file_name)`
+
+## Fetching Data from Internet
+
+- `request` from `urllib` module serves for HTTP communication
+- `json` module helps to parse JSON objects
