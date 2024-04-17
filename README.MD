@@ -26,3 +26,5 @@ a warmup before starting solving more complex problems.
 [SpringBootSecurityTutorial](SpringBootSecurityTutorial/README.MD) a project for Spring Boot 3 + Spring Security 6 totorial.
 
 [GettingStartedWithPython](GettingStartedWithPython/README.MD) a project for a course Getting Started With Python (by Amigoscode).
+
+[PrefessionalFullStackDeveloper](ProfessionalFullStackDeveloper/README.MD) a project for a course Professional Full Stack Developer (by Amigoscode).
