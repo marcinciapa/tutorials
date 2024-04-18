@@ -3,10 +3,10 @@ package com.github.marcinciapa.tutorials.fullstack;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.Objects;
 
 @SpringBootApplication
 //@ComponentScan(basePackages = "com.github.marcinciapa.tutorials.fullstack")
@@ -21,9 +21,12 @@ public class Main {
     }
 
     @GetMapping("/greet")
-    public GreetResponse greet() {
+    public GreetResponse greet(
+            @RequestParam(value = "name", required = false) String name) {
+
+        String greetMessage = name == null || name.isBlank() ? "Hello" : "Hello %s".formatted(name);
         GreetResponse response = new GreetResponse(
-                "Hello",
+                greetMessage,
                 List.of("Java", "Python", "Kotlin"),
                 new Person("Marcin", 22, 30_000)
         );
@@ -35,7 +38,8 @@ public class Main {
                          Person person) {
     }
 
-    record Person(String name, int age, double savings) {}
+    record Person(String name, int age, double savings) {
+    }
 
 //    class GreetResponse {
 //        private final String greet;

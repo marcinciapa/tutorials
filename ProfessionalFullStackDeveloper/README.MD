@@ -18,3 +18,12 @@ Code for [Professional Full Stack Developer course](https://www.amigoscode.com/c
   controllers.
 - Classes annotated with `@RestController` are `@Controller`s, which return serialized JSON response bodies.
 - The default serializer for Spring Boot is `com.fasterxml:jackson`.
+
+## HTTP, REST and APIs
+
+- `DELETE` HTTP method is idempotent: no matter if the response code is different from the first call, there is no
+  additional side effect.
+- `Etag` header in the server's response notifies the client of what is the version of provided resource. Client then
+  caches the version and sends it as the `If-None-Match` header next time accessing this resource. If the version
+  matches the version of the server, server doesn't have to provide the entire response bode, but just 304 response
+  code (Not Modified) informing the client, that what it caches is up-to-date.
