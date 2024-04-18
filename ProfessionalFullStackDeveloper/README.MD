@@ -27,3 +27,8 @@ Code for [Professional Full Stack Developer course](https://www.amigoscode.com/c
   caches the version and sends it as the `If-None-Match` header next time accessing this resource. If the version
   matches the version of the server, server doesn't have to provide the entire response bode, but just 304 response
   code (Not Modified) informing the client, that what it caches is up-to-date.
+
+## Developer Tools
+
+- XHR stands for _XML HTTP Requests_.
+- RestfulTool is an IntelliJ plugin allowing sending HTTP requests from IntelliJ CE.
