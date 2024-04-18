@@ -37,3 +37,5 @@ Code for [Professional Full Stack Developer course](https://www.amigoscode.com/c
 
 - To use with Spring JPA, entities cannot be records and fields cannot be final, because the framework has to mutate
   them.
+
+## Structure the Backend
