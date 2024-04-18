@@ -32,3 +32,8 @@ Code for [Professional Full Stack Developer course](https://www.amigoscode.com/c
 
 - XHR stands for _XML HTTP Requests_.
 - RestfulTool is an IntelliJ plugin allowing sending HTTP requests from IntelliJ CE.
+
+## CRUD - Read
+
+- To use with Spring JPA, entities cannot be records and fields cannot be final, because the framework has to mutate
+  them.
