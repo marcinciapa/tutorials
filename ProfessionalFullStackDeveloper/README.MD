@@ -39,3 +39,23 @@ Code for [Professional Full Stack Developer course](https://www.amigoscode.com/c
   them.
 
 ## Structure the Backend
+
+## Application Context and Beans
+
+- _ApplicationContext_ (which implements _BeanFactory_) provides basic functionalities for managing beans. During
+  injection Spring searches beans in the ApplicationContext. When another component needs the same beans, there is no
+  need to create a new instance of the bean again.
+- Old versions of Spring required explicit _Autowiring_ (or another form of injecting).
+- `SpringApplication.run()` returns the ApplicationContext we can interact with (for example retrieving all available
+  beans).
+- Available bean scopes:
+    - _singleton_ - single bean definition to a single object instance (single bean reused for each injection)
+    - _prototype_ - single bean definition to any number of object instances (separate instance for each injection)
+    - _request_ - single bean definition to the single HTTP request (only for web-aware ApplicationContext)
+    - _session_ - single bean definition to the single HTTP session (only for web-aware ApplicationContext)
+    - _global session_ - single bean definition to the single global HTTP session (only for web-aware
+      ApplicationContext)
+- A scope of a bean can be changed using the combination of `@Bean` and `@Scope` annotations.
+- __Bean__ is an object that the Spring Container instantiates, assembles and manages the entire lifecycle for us.
+- The name of the bean created from Configuration is the same as the name of a function producing it. To change it, an
+  annotation `@Bean("newName")` should be used.
