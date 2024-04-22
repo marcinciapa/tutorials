@@ -65,3 +65,8 @@ Code for [Professional Full Stack Developer course](https://www.amigoscode.com/c
 - In Spring there is a bean which captures an exception and translates it into the error response.
 - It's enough to annotate an exception class with `@ResponseStatus` so Spring changes the status code when it's thrown.
 
+## Databases
+
+- A convenient way to connect to the PostgreSQL running inside the Docker container
+  is `docker exec -it bash postgres; psql -U username`.
+
