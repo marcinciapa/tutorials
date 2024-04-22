@@ -59,3 +59,9 @@ Code for [Professional Full Stack Developer course](https://www.amigoscode.com/c
 - __Bean__ is an object that the Spring Container instantiates, assembles and manages the entire lifecycle for us.
 - The name of the bean created from Configuration is the same as the name of a function producing it. To change it, an
   annotation `@Bean("newName")` should be used.
+
+## Error Handling
+
+- In Spring there is a bean which captures an exception and translates it into the error response.
+- It's enough to annotate an exception class with `@ResponseStatus` so Spring changes the status code when it's thrown.
+
