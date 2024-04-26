@@ -72,6 +72,7 @@ Code for [Professional Full Stack Developer course](https://www.amigoscode.com/c
 
 ## Spring Data JPA
 
-- It's possible to define column constraints using `@Column` annotation on field.
+- It's possible to define column constraints using `@Column` annotation on field of Entity.
 - Interfaces extending `JpaRepository` don't have to be marked as `@Repository`. It's done by default.
 - Beans of type `CommandLineRunner` are running when the application starts.
+
