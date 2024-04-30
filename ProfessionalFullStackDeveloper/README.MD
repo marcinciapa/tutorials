@@ -83,3 +83,5 @@ Code for [Professional Full Stack Developer course](https://www.amigoscode.com/c
 - When adding methods to an interface extending `JpaRepository`, Spring Boot Data JPA creates a query based on the
   method name.
 
+## CRUD - Delete (Exercise)
+
