@@ -57,4 +57,15 @@ public class CustomerListDataAccessService implements CustomerDao {
                 .stream()
                 .anyMatch(c -> id.equals(c.getId()));
     }
+
+    @Override
+    public void updateCustomer(Customer customer) {
+        customers.stream()
+                .filter(c -> customer.getId().equals(c.getId()))
+                .findFirst()
+                .ifPresent(c -> {
+                    customers.remove(c);
+                    customers.add(customer);
+                });
+    }
 }
