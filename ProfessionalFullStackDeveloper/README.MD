@@ -85,3 +85,5 @@ Code for [Professional Full Stack Developer course](https://www.amigoscode.com/c
 
 ## CRUD - Delete (Exercise)
 
+## CRUD - Update (Exercise)
+
