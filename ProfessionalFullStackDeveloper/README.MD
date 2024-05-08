@@ -87,3 +87,7 @@ Code for [Professional Full Stack Developer course](https://www.amigoscode.com/c
 
 ## CRUD - Update (Exercise)
 
+## Datasources, JDBC & Flyway
+
+- `\x` in PostgreSQL enables/disables extended display, which allows displaying records in more user-friendly format.
+
