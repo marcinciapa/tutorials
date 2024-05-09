@@ -91,3 +91,10 @@ Code for [Professional Full Stack Developer course](https://www.amigoscode.com/c
 
 - `\x` in PostgreSQL enables/disables extended display, which allows displaying records in more user-friendly format.
 
+## Flyway
+
+- In PostgreSQL Big Serial is a numeric data type, which increments automatically, backed by a sequence, which is
+  automatically created. When table is created, column has `BIGINT` type.
+- Index is automatically created for columns which are included in unique constraint.
+- Flyway migrations can be described using SQL files, but also as Java/Spring classes in `db.migration` package.
+
