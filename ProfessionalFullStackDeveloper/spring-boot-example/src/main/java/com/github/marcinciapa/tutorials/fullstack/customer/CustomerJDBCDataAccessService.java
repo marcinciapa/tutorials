@@ -19,22 +19,68 @@ public class CustomerJDBCDataAccessService implements CustomerDao {
 
     @Override
     public void updateCustomer(Customer customer) {
+        var sql = """
+                UPDATE
+                customer
+                SET
+                name=?,
+                email=?,
+                age=?
+                WHERE id=?
+                """;
 
+        jdbcTemplate.update(
+                sql,
+                customer.getName(),
+                customer.getEmail(),
+                customer.getAge(),
+                customer.getId()
+        );
     }
 
     @Override
     public boolean existsPersonWithId(Long id) {
-        return false;
+        var sql = """
+                SELECT count(id)
+                FROM customer
+                WHERE id=?
+                """;
+
+        Integer count = jdbcTemplate.queryForObject(
+                sql,
+                Integer.class,
+                id
+        );
+
+        return count != null && count > 0;
     }
 
     @Override
     public void deleteCustomer(Long id) {
+        var sql = """
+                DELETE
+                FROM customer
+                WHERE id=?
+                """;
 
+        jdbcTemplate.update(sql, id);
     }
 
     @Override
     public boolean existsPersonWithEmail(String email) {
-        return false;
+        var sql = """
+                SELECT count(id)
+                FROM customer
+                WHERE email=?
+                """;
+
+        Integer count = jdbcTemplate.queryForObject(
+                sql,
+                Integer.class,
+                email
+        );
+
+        return count != null && count > 0;
     }
 
     @Override
