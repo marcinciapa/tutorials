@@ -98,3 +98,8 @@ Code for [Professional Full Stack Developer course](https://www.amigoscode.com/c
 - Index is automatically created for columns which are included in unique constraint.
 - Flyway migrations can be described using SQL files, but also as Java/Spring classes in `db.migration` package.
 
+## JDBC Template
+
+- JDBC Template `queryForObject()` methods invokes `query()` under the hood and throws exception when result set is
+  empty.
+- Spring Data JPA is suitable for simple domains. For systems requiring extensive SQL queries JDBC is a better choice.
