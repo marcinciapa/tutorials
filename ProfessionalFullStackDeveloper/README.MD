@@ -106,3 +106,9 @@ Code for [Professional Full Stack Developer course](https://www.amigoscode.com/c
 
 ## Testing - Setup
 
+- Using Testcontainers may successfully replace using H2 for testing.
+- It's possible to interact with Testcontainers object to extract information about the running container.
+- `@DynamicPropertySource` annotation allows to provide properties for Spring, which can override application.yml
+  configuration.
+- `@SpringBootTest` annotation causes the entire Spring context and application startup.
+
