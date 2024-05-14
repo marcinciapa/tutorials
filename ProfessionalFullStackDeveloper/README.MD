@@ -103,3 +103,6 @@ Code for [Professional Full Stack Developer course](https://www.amigoscode.com/c
 - JDBC Template `queryForObject()` methods invokes `query()` under the hood and throws exception when result set is
   empty.
 - Spring Data JPA is suitable for simple domains. For systems requiring extensive SQL queries JDBC is a better choice.
+
+## Testing - Setup
+
