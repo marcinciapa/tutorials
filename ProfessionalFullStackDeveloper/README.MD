@@ -103,3 +103,12 @@ Code for [Professional Full Stack Developer course](https://www.amigoscode.com/c
 - JDBC Template `queryForObject()` methods invokes `query()` under the hood and throws exception when result set is
   empty.
 - Spring Data JPA is suitable for simple domains. For systems requiring extensive SQL queries JDBC is a better choice.
+
+## Testing - Setup
+
+- Using Testcontainers may successfully replace using H2 for testing.
+- It's possible to interact with Testcontainers object to extract information about the running container.
+- `@DynamicPropertySource` annotation allows to provide properties for Spring, which can override application.yml
+  configuration.
+- `@SpringBootTest` annotation causes the entire Spring context and application startup.
+
