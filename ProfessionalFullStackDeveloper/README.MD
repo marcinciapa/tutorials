@@ -112,3 +112,8 @@ Code for [Professional Full Stack Developer course](https://www.amigoscode.com/c
   configuration.
 - `@SpringBootTest` annotation causes the entire Spring context and application startup.
 
+## Testing JDBC Template
+
+- It's convenient to create and use JdbcTemplate object for testing, after creating DataSource first.
+- To test optionals with AssertJ it's convenient to use `assertThat(optional).hasValueSatisfying(...)`.
+
