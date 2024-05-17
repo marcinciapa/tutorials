@@ -117,3 +117,7 @@ Code for [Professional Full Stack Developer course](https://www.amigoscode.com/c
 - It's convenient to create and use JdbcTemplate object for testing, after creating DataSource first.
 - To test optionals with AssertJ it's convenient to use `assertThat(optional).hasValueSatisfying(...)`.
 
+## Testing JPA Repositories
+
+- `@DataJpaTest` with `@AutoConfigureTestDatabase` allows creating context only with beans necessary to use JPA.
+  Without `@AutoConfigureTestDatabase` Spring Test tries to use embedded database.
