@@ -121,3 +121,6 @@ Code for [Professional Full Stack Developer course](https://www.amigoscode.com/c
 
 - `@DataJpaTest` with `@AutoConfigureTestDatabase` allows creating context only with beans necessary to use JPA.
   Without `@AutoConfigureTestDatabase` Spring Test tries to use embedded database.
+
+## DAO Mock Testing
+
