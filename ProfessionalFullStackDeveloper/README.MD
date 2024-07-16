@@ -134,3 +134,16 @@ Code for [Professional Full Stack Developer course](https://www.amigoscode.com/c
 
 ## The Jar file
 
+## Maven & Tests
+
+- Surefire Maven plugin is use during the 'test' phase to execute the unit tests and generate reports.
+- Surefire plugin runs only classes which end with 'Test'. If the test has different naming, tests will not be run
+  automatically. It can be configured to exclude classes named `**/*IntegrationTest.java`.
+- Spring Boot plugin can be configured to start the Spring application in a specific lifecycle phases.
+- After starting the application Failsafe plugin may be used to run integration tests. The difference between Surefire
+  and Failsafe is that Failsafe runs tests in a save mode (fail doesn't stop the execution). It only runs classes which
+  end with 'IT', but it can be configured to include classes named `**/*IntegrationTest.java`.
+- Spring Boot plugin can be configured to start application for integration tests using a random port. Build helper
+  maven plugin is required for this.
+- Spring Boot Maven offers a lot of good features: processing AOT, generating OCI images etc.
+
