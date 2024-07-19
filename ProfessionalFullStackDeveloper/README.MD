@@ -147,3 +147,12 @@ Code for [Professional Full Stack Developer course](https://www.amigoscode.com/c
   Maven plugin is required for this.
 - Spring Boot Maven plugin offers a lot of good features: processing AOT, generating OCI images etc.
 
+## DevOps
+
+- Goals of DevOps: collaboration between development and operations, faster delivery, increased reliability, efficiency
+  and const savings.
+- DevOps Lifecycle: planning, development, testing, deployment, monitoring.
+- Key DevOps practices: Continuous Integration, Continuous Deployment, Infrastructure as Code, Monitoring and Logging
+- CI - the practice of regularly merging code changes which is then built and tested automatically.
+- CD - Automating software release process - from building and testing to deployment and infrastructure provisioning.
+
