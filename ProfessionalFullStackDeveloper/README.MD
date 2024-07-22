@@ -156,3 +156,9 @@ Code for [Professional Full Stack Developer course](https://www.amigoscode.com/c
 - CI - the practice of regularly merging code changes which is then built and tested automatically.
 - CD - Automating software release process - from building and testing to deployment and infrastructure provisioning.
 
+## Docker
+
+- Docker containers don't need to have the complete OS, they share OS kernel with other containers. Each run as an
+  isolated process in user space.
+- Docker may be less secure than a VM, because in VM, when an application gets compromised, the guest OS is isolated.
+
