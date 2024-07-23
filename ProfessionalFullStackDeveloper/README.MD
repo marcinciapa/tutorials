@@ -162,3 +162,7 @@ Code for [Professional Full Stack Developer course](https://www.amigoscode.com/c
   isolated process in user space.
 - Docker may be less secure than a VM, because in VM, when an application gets compromised, the guest OS is isolated.
 
+## Jib
+
+
+
