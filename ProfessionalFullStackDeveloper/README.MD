@@ -164,5 +164,12 @@ Code for [Professional Full Stack Developer course](https://www.amigoscode.com/c
 
 ## Jib
 
+- Building and pushing Docker image on `mvn clean package` didn't work. I had to run `mvn jib:build` to achieve it.
+- Two separate tags of the same Docker image (`1.0.0` and `latest`) may have the same digest (sha256). In such case one
+  tag does not have to be downloaded if another tag has already been downloaded.
+- When starting a container with `docker run`, it's possible to specify `--network`. Containers are accessible using
+  their internal ports, not ports exposed on the host.
+- In Docker it's possible to list networks with command `docker network ls`. It's possible to list images, containers
+  etc. the same way.
 
 
