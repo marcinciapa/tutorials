@@ -27,4 +27,6 @@ a warmup before starting solving more complex problems.
 
 [GettingStartedWithPython](GettingStartedWithPython/README.MD) a project for a course Getting Started With Python (by Amigoscode).
 
-[PrefessionalFullStackDeveloper](ProfessionalFullStackDeveloper/README.MD) a project for a course Professional Full Stack Developer (by Amigoscode).
+[ProfessionalFullStackDeveloper](ProfessionalFullStackDeveloper/README.MD) a project for a course Professional Full Stack Developer (by Amigoscode).
+
+[SpringBootGraphQL](SpringBootGraphQL/README.MD) a project for a tutorial for Spring Boot and GraphQL.
