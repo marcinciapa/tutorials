@@ -30,3 +30,5 @@ a warmup before starting solving more complex problems.
 [ProfessionalFullStackDeveloper](ProfessionalFullStackDeveloper/README.MD) a project for a course Professional Full Stack Developer (by Amigoscode).
 
 [SpringBootGraphQL](SpringBootGraphQL/README.MD) a project for a tutorial for Spring Boot and GraphQL.
+
+[SpringKafkaTestcontainers](SpringKafkaTestcontainers/README.MD) project for a guide for integrating Spring Boot, Kafka and TestContainers.
